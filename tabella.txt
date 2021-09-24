@@ -1,0 +1,14 @@
+Scrivete la struttura della tabella "auto" con le varie proprietà, tipi di dato
+ e attributi in un file .txt e pushatelo sulla vostra repo. Aiutatevi con le slides per scegliere le giuste caratteristiche.
+
+ MODELLO-VARCHARD(100)-NOT_NULL
+ 
+ MARCA-VARCHARD(100)-NOT_NULL
+ RANGE_COSTO -FLOAT- NOT_NULL
+RANGE-ANNO -FLOAT - NOT_NULL
+RANGE-PREZZO  FLOAT -NOT-NULL 
+ACQUISTA - BOOL[TINYINT(1)]- NOT-NOT_NULL
+FINANZIA - BOOL[TINYINT(1)]- NOT-NOT_NULL
+IMMAGINI-VARCHARD -NULL
+
+
