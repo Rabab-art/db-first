@@ -29,3 +29,12 @@ WHERE (`hour`)> '14:00' AND (`date`)= '2020-06-20';
 SELECT `name`,`level`
 FROM `degrees`
 WHERE (`level`) = 'magistrale';
+
+-- Da quanti dipartimenti è composta l'università?
+SELECT COUNT(*)
+FROM `departments`;
+
+-- Quanti sono gli insegnanti che non hanno un numero di telefono?
+SELECT `phone`
+FROM `teachers` 
+WHERE `phone` is NULL OR `phone`= ' ';
