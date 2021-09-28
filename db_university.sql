@@ -1,3 +1,5 @@
+-- SELECT
+
 -- Selezionare tutti gli studenti nati nel 1990
 SELECT `date_of_birth`
 FROM `students`
@@ -38,3 +40,14 @@ FROM `departments`;
 SELECT `phone`
 FROM `teachers` 
 WHERE `phone` is NULL OR `phone`= ' ';
+
+
+-- GROUP BY
+
+-- Contare quanti iscritti ci sono stati ogni anno
+SELECT COUNT(*) AS `degree_id`,YEAR(`enrolment_date`) AS `iscritti_ognianno`
+FROM `students` 
+WHERE YEAR(`enrolment_date`)
+GROUP BY`iscritti_ognianno`;
+
+-- Contare gli insegnanti che hanno l'ufficio nello stesso edificio
